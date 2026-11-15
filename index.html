@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play free online games at FreeGames4U. Discover arcade, racing, puzzle and action games.">
+  <meta name="theme-color" content="#0b1020">
+  <title>FreeGames4U — Play Free Online Games</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#0b1020;--panel:#121a30;--panel2:#18233d;--text:#f5f7ff;--muted:#9ba8c3;--lime:#c5ff4a;--cyan:#51e5d1;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}.site-header{height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,24px);border-bottom:1px solid var(--line);background:rgba(11,16,32,.9);position:sticky;top:0;z-index:10;backdrop-filter:blur(16px)}.brand{display:flex;align-items:center;gap:10px;font:800 18px 'Space Grotesk',sans-serif;letter-spacing:-.7px}.brand-mark{width:35px;height:35px;border-radius:11px;background:var(--lime);color:#111827;display:grid;place-items:center;font-size:14px;transform:rotate(-7deg)}.brand-accent{color:var(--lime)}.main-nav{display:flex;gap:34px;color:#b7c0d3;font-size:14px}.main-nav a:hover,.site-footer>a:last-child:hover{color:var(--lime)}.header-button{background:#1b2741;padding:11px 17px;border:1px solid var(--line);border-radius:9px;font-weight:700;font-size:13px}.header-button span{color:var(--lime);margin-left:8px}.menu-toggle{display:none;background:none;border:0;color:white;font-size:25px}.hero{min-height:580px;padding:80px max(8vw,28px) 70px;display:flex;align-items:center;justify-content:space-between;gap:35px;overflow:hidden;background:radial-gradient(ellipse at 75% 45%,rgba(49,91,117,.23),transparent 38%),linear-gradient(130deg,#0b1020,#101a31)}.hero-content{max-width:590px;position:relative;z-index:1}.eyebrow{font-size:10px;letter-spacing:2px;color:var(--lime);font-weight:800}.pulse{display:inline-block;width:7px;height:7px;background:var(--lime);border-radius:50%;margin-right:8px;box-shadow:0 0 12px var(--lime)}h1,h2,h3,p{margin-top:0}h1,h2{font-family:'Space Grotesk',sans-serif;letter-spacing:-2px}h1{font-size:clamp(54px,7vw,86px);line-height:.98;margin:22px 0}h1 span,h2 span{color:var(--lime)}.hero-content>p{max-width:480px;color:var(--muted);line-height:1.8;font-size:15px}.hero-actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;gap:18px;padding:14px 19px;border-radius:9px;font-size:13px;font-weight:800}.button-primary{background:var(--lime);color:#101727;box-shadow:0 8px 30px rgba(197,255,74,.13)}.button-primary:hover{transform:translateY(-2px);box-shadow:0 12px 35px rgba(197,255,74,.22)}.button-ghost{border:1px solid var(--line);color:#dce3f3}.hero-stats{display:flex;gap:35px;margin-top:55px}.hero-stats div{display:flex;flex-direction:column;gap:4px}.hero-stats strong{font:700 22px 'Space Grotesk';color:white}.hero-stats span{font-size:11px;color:var(--muted)}.hero-art{width:min(42vw,450px);height:370px;position:relative;display:grid;place-items:center;flex-shrink:0}.orbit{position:absolute;border:1px solid rgba(197,255,74,.15);border-radius:50%;transform:rotate(-22deg)}.orbit-one{width:360px;height:230px}.orbit-two{width:290px;height:340px;transform:rotate(55deg);border-color:rgba(81,229,209,.17)}.gamepad{width:270px;height:165px;border-radius:55px 55px 75px 75px;background:linear-gradient(145deg,#d9e1ed,#74839e);transform:rotate(-13deg);box-shadow:18px 24px 0 rgba(0,0,0,.2),inset 0 -10px 15px rgba(12,20,38,.25);position:relative;z-index:1}.gamepad:before,.gamepad:after{content:"";position:absolute;width:90px;height:100px;background:inherit;bottom:-12px;border-radius:35px}.gamepad:before{left:10px;transform:rotate(8deg)}.gamepad:after{right:10px;transform:rotate(-8deg)}.pad-cross{position:absolute;z-index:2;left:54px;top:52px;width:45px;height:45px}.pad-cross:before,.pad-cross:after{content:"";position:absolute;background:#26334c;border-radius:4px}.pad-cross:before{width:45px;height:14px;top:15px}.pad-cross:after{height:45px;width:14px;left:15px}.pad-buttons{position:absolute;z-index:2;right:53px;top:48px;display:flex;gap:12px;transform:rotate(-25deg)}.pad-buttons i{width:17px;height:17px;background:#9e4de0;border-radius:50%;box-shadow:inset 0 -3px 2px #632b94}.pad-buttons i+ i{background:#c5ff4a;box-shadow:inset 0 -3px 2px #7eaa20;margin-top:24px}.pad-center{position:absolute;z-index:2;left:119px;bottom:24px;display:flex;gap:12px}.pad-center span{width:22px;height:6px;background:#65748c;border-radius:8px}.float-chip{position:absolute;z-index:3;padding:10px 14px;border-radius:8px;background:#1b2944;border:1px solid rgba(255,255,255,.12);font-size:10px;font-weight:800;letter-spacing:1px;box-shadow:0 12px 30px #050914}.chip-one{top:55px;left:8px;color:var(--cyan);transform:rotate(-8deg)}.chip-two{right:0;bottom:55px;color:var(--lime);transform:rotate(8deg)}.spark{position:absolute;color:var(--lime);font-size:28px}.spark-a{top:40px;right:65px}.spark-b{bottom:45px;left:30px;color:var(--cyan);font-size:35px}.spark-c{top:155px;right:4px}.ticker{display:flex;justify-content:space-around;gap:20px;overflow:hidden;padding:18px 20px;background:var(--lime);color:#111827;font-size:10px;font-weight:900;letter-spacing:1.5px}.section-wrap{padding-left:max(8vw,25px);padding-right:max(8vw,25px)}.games-section{padding-top:95px;padding-bottom:100px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px}.section-heading h2,.why-inner h2{font-size:clamp(37px,4vw,52px);margin:10px 0 0}.search-box{display:flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);padding:0 14px;border-radius:9px;width:240px;height:43px;color:var(--lime)}.search-box input{background:none;border:0;outline:0;color:white;width:100%;font:13px 'DM Sans'}.search-box input::placeholder{color:#73819e}.filters{display:flex;gap:9px;margin:34px 0 25px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;color:#aab6ce;padding:9px 16px;border-radius:30px;font:600 12px 'DM Sans';cursor:pointer}.filter:hover,.filter.active{background:var(--lime);border-color:var(--lime);color:#101727}.game-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.game-card{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:.25s}.game-card:hover{transform:translateY(-5px);border-color:rgba(197,255,74,.4);box-shadow:0 15px 35px rgba(0,0,0,.2)}.game-thumb{height:175px;display:grid;place-items:center;position:relative;overflow:hidden}.game-thumb:before,.game-thumb:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:50%;width:180px;height:180px}.game-thumb:after{width:125px;height:125px}.thumb-snake{background:radial-gradient(circle at 50% 45%,#315c54,#132e39 70%)}.thumb-race{background:radial-gradient(circle at 50% 45%,#65452e,#281d32 70%)}.thumb-puzzle{background:radial-gradient(circle at 50% 45%,#4a397c,#201d45 70%)}.thumb-space{background:radial-gradient(circle at 50% 45%,#31558a,#151b3c 70%)}.game-emoji{font-size:66px;z-index:1;filter:drop-shadow(0 12px 10px rgba(0,0,0,.3));transition:.3s}.game-card:hover .game-emoji{transform:scale(1.12) rotate(-5deg)}.tag{position:absolute;top:13px;left:13px;font-size:9px;font-weight:900;letter-spacing:1px;background:rgba(8,14,27,.65);padding:6px 8px;border-radius:5px;color:var(--lime)}.play-icon{position:absolute;right:14px;bottom:13px;width:29px;height:29px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:#111827;font-size:10px}.game-info{padding:17px 15px;display:flex;justify-content:space-between;align-items:center;gap:8px}.game-info h3{font:700 16px 'Space Grotesk';margin:0 0 5px}.game-info p{font-size:10px;color:var(--muted);margin:0;line-height:1.5}.card-play{white-space:nowrap;background:transparent;border:0;color:var(--lime);font:700 11px 'DM Sans';cursor:pointer}.card-play span{margin-left:4px}.games-note,.no-results{color:var(--muted);font-size:12px;margin-top:25px}.why-section{background:#10192d;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:75px 0}.why-inner{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.why-points{display:grid;gap:25px}.why-points>div{display:flex;gap:17px;align-items:flex-start}.point-icon{width:43px;height:43px;flex-shrink:0;border-radius:12px;background:#202e48;display:grid;place-items:center;font-size:20px}.why-points h3{font:700 16px 'Space Grotesk';margin:0 0 5px}.why-points p{color:var(--muted);font-size:12px;line-height:1.7;margin:0;max-width:350px}.cta{padding-top:80px;padding-bottom:80px;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-size:clamp(35px,4vw,52px);margin:12px 0 8px}.cta p{color:var(--muted);font-size:13px;margin:0}.site-footer{border-top:1px solid var(--line);padding:25px max(5vw,24px);display:flex;align-items:center;justify-content:space-between;gap:20px}.site-footer p,.site-footer>a:last-child{color:var(--muted);font-size:11px;margin:0}.modal{position:fixed;inset:0;background:rgba(2,5,14,.84);z-index:30;display:grid;place-items:center;padding:20px;backdrop-filter:blur(8px)}.modal[hidden]{display:none}.modal-panel{width:min(650px,100%);background:#111b30;border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:0 25px 90px #000}.modal-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.modal-top h2{font:700 25px 'Space Grotesk';margin:5px 0 0}.close-modal{background:#26334b;border:0;color:white;border-radius:8px;width:36px;height:36px;font-size:24px;cursor:pointer}.game-area{min-height:300px;background:#080e1d;border-radius:12px;display:grid;place-items:center;padding:18px;overflow:hidden}.modal-help{font-size:11px;color:var(--muted);margin:13px 0 0}.mini-game{width:100%;text-align:center}.mini-game h3{font:700 22px 'Space Grotesk'}.mini-game p{color:var(--muted);font-size:12px}.game-action{border:0;border-radius:8px;background:var(--lime);padding:11px 18px;font-weight:800;cursor:pointer;color:#101727}.snake-board{display:grid;grid-template-columns:repeat(12,1fr);gap:3px;width:min(300px,100%);aspect-ratio:1;background:#17243a;padding:5px;border-radius:8px;margin:12px auto}.snake-cell{background:#26354e;border-radius:2px}.snake-cell.snake{background:var(--lime)}.snake-cell.food{background:#ff6d8c;border-radius:50%}.color-target{font-size:18px;font-weight:900;padding:24px 32px;border-radius:12px;background:#24334e;border:0;color:white;cursor:pointer}.tap-score{font:700 17px 'Space Grotesk';color:var(--lime)}.race-track{height:220px;width:min(300px,100%);margin:auto;background:repeating-linear-gradient(0deg,#303b4c 0 35px,#3a4658 35px 70px);border-left:35px solid #1b273a;border-right:35px solid #1b273a;position:relative;border-radius:8px;overflow:hidden}.race-car{position:absolute;bottom:15px;left:calc(50% - 17px);font-size:30px}.race-obstacle{position:absolute;top:0;font-size:26px}.space-target{font-size:45px;cursor:pointer;user-select:none}.space-score{color:var(--lime);font-weight:800}@media(max-width:900px){.game-grid{grid-template-columns:repeat(2,1fr)}.hero{padding-top:65px}.hero-art{width:38vw;transform:scale(.85)}.why-inner{gap:35px}}@media(max-width:650px){.site-header{height:68px}.main-nav{display:none;position:absolute;top:68px;left:0;right:0;background:#111a2e;padding:20px 25px;flex-direction:column;gap:18px;border-bottom:1px solid var(--line)}.main-nav.open{display:flex}.header-button{margin-left:auto;margin-right:14px;padding:9px 12px}.menu-toggle{display:block}.hero{padding:58px 25px 55px;min-height:0}.hero-art{display:none}h1{font-size:58px}.hero-stats{gap:22px;margin-top:40px}.hero-stats strong{font-size:19px}.ticker{justify-content:flex-start;min-width:0;white-space:nowrap;font-size:9px}.section-wrap{padding-left:22px;padding-right:22px}.games-section{padding-top:65px;padding-bottom:70px}.section-heading{align-items:flex-start;flex-direction:column}.search-box{width:100%}.game-grid{gap:12px}.game-thumb{height:135px}.game-emoji{font-size:52px}.game-info{padding:13px 10px;align-items:flex-start;flex-direction:column}.game-info h3{font-size:14px}.card-play{padding:0}.why-section{padding:60px 0}.why-inner{grid-template-columns:1fr;gap:35px}.cta{padding-top:60px;padding-bottom:60px;align-items:flex-start;flex-direction:column}.site-footer{flex-wrap:wrap}.site-footer p{order:3;width:100%}}@media(max-width:380px){.game-grid{grid-template-columns:1fr}.game-thumb{height:165px}.hero-stats{gap:14px}.hero-stats span{font-size:10px}}
+
+.extra-thumb{background:radial-gradient(circle at 50% 45%,#344d72,#172238 72%)}
+.extra-game-icon{z-index:1;font-size:68px;line-height:1;filter:drop-shadow(0 12px 10px rgba(0,0,0,.4));transition:transform .3s,filter .3s}
+.extra-thumb:before{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(197,255,74,.13);filter:blur(20px)}
+.extra-game-card:hover .extra-game-icon{transform:translateY(-7px) scale(1.16) rotate(-7deg)}
+.extra-memory{background:radial-gradient(circle,#315f65,#142b3b 75%)}
+.extra-ttt{background:radial-gradient(circle,#554b91,#211f48 75%)}
+.extra-whack{background:radial-gradient(circle,#735b29,#30263a 75%)}
+.extra-coin{background:radial-gradient(circle,#76512b,#30233a 75%)}
+.extra-guess{background:radial-gradient(circle,#286b6d,#182b45 75%)}
+.extra-math{background:radial-gradient(circle,#594c91,#252044 75%)}
+.extra-tap{background:radial-gradient(circle,#824766,#34213e 75%)}
+.extra-rps{background:radial-gradient(circle,#286a6b,#18283f 75%)}
+.extra-meteor{background:radial-gradient(circle,#81463d,#2b203a 75%)}
+.extra-lane{background:radial-gradient(circle,#465b77,#1a263d 75%)}
+@media(max-width:650px){.extra-game-icon{font-size:55px}}
+
+
+/* Layout and controls for the ten added games */
+.memory-grid{display:grid;grid-template-columns:repeat(4,minmax(48px,1fr));gap:9px;max-width:340px;margin:15px auto}
+.memory-card{min-height:58px;border:1px solid #42516c;border-radius:9px;background:#24334e;color:white;font-size:25px;font-weight:800;cursor:pointer}
+.memory-card.revealed{background:#354c62;border-color:var(--lime)}
+.ttt-grid{display:grid;grid-template-columns:repeat(3,76px);gap:7px;justify-content:center;margin:18px auto}
+.ttt-cell{height:76px;border:1px solid #42516c;border-radius:10px;background:#24334e;color:var(--lime);font-size:32px;font-weight:800;cursor:pointer}
+.whack-grid{display:grid;grid-template-columns:repeat(3,68px);gap:9px;justify-content:center;margin:16px auto}
+.whack-hole{height:62px;border:1px solid #42516c;border-radius:50%;background:#24334e;color:white;font-size:28px;cursor:pointer}
+.game-input{width:min(230px,90%);padding:12px;border-radius:8px;border:1px solid #42516c;background:#17243a;color:white;margin:8px}
+.game-choice,.game-controls button{border:1px solid #42516c;border-radius:8px;background:#24334e;color:white;padding:11px 14px;margin:5px;cursor:pointer}
+.game-controls{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin-top:12px}
+.color-target:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:420px){.ttt-grid{grid-template-columns:repeat(3,64px)}.ttt-cell{height:64px}.whack-grid{grid-template-columns:repeat(3,60px)}.whack-hole{height:56px}}
+
+  </style>
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="FreeGames4U home">
+      <span class="brand-mark">4U</span>
+      <span>FREEGAMES<span class="brand-accent">4U</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#games">Games</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-button" href="#games">Play now <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT GAME IS HERE</div>
+        <h1>PLAY MORE.<br><span>PAY NOTHING.</span></h1>
+        <p>Jump into quick challenges, racing thrills and brain-teasing puzzles. Your next favourite game is just one click away.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#games">Explore games <span>→</span></a>
+          <a class="button button-ghost" href="#categories">Browse categories</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>100%</strong><span>Free to play</span></div>
+          <div><strong>4</strong><span>Game categories</span></div>
+          <div><strong>24/7</strong><span>Ready for fun</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative gaming illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="float-chip chip-one">✦ ARCADE</div>
+        <div class="float-chip chip-two">LEVEL UP!</div>
+        <div class="gamepad">
+          <div class="pad-cross"><i></i><b></b></div>
+          <div class="pad-buttons"><i></i><i></i></div>
+          <div class="pad-center"><span></span><span></span></div>
+        </div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div><div class="spark spark-c">✦</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Site features">
+      <span>✦ FREE ONLINE GAMES</span><span>✦ NO DOWNLOAD NEEDED</span><span>✦ PLAY ON MOBILE</span><span>✦ NEW CHALLENGES</span>
+    </section>
+
+    <section class="games-section section-wrap" id="games">
+      <div class="section-heading">
+        <div><div class="eyebrow">PICK YOUR PLAY</div><h2>Popular <span>games</span></h2></div>
+        <div class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games"></div>
+      </div>
+      <div class="filters" id="categories">
+        <button class="filter active" data-category="all">All games</button>
+        <button class="filter" data-category="arcade">Arcade</button>
+        <button class="filter" data-category="racing">Racing</button>
+        <button class="filter" data-category="puzzle">Puzzle</button>
+        <button class="filter" data-category="action">Action</button>
+      </div>
+      <div class="game-grid" id="gameGrid">
+        <article class="game-card" data-category="arcade" data-title="Neon Snake">
+          <div class="game-thumb thumb-snake"><span class="game-visual snake-visual" aria-hidden="true">
+            <svg viewBox="0 0 120 100" role="img"><path d="M25 72c-10-5-10-19 1-24l24-10c13-6 19-20 33-20 12 0 19 8 17 18-2 9-12 12-21 9l-8-3" fill="none" stroke="#b9ff4b" stroke-width="13" stroke-linecap="round"/><path d="M89 26l13-8-2 16z" fill="#eaffb9"/><circle cx="91" cy="27" r="2.8" fill="#10202a"/><path d="M18 75l-8 8 13 1" fill="none" stroke="#51e5d1" stroke-width="5" stroke-linecap="round"/><path d="M39 54l7 5" stroke="#eaffb9" stroke-width="3" stroke-linecap="round"/></svg>
+          </span><span class="tag">ARCADE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Neon Snake</h3><p>Grow, dodge and beat your best score.</p></div><button class="card-play" data-game="snake" aria-label="Play Neon Snake">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card" data-category="racing" data-title="Speed Racer">
+          <div class="game-thumb thumb-race"><span class="game-visual race-visual" aria-hidden="true">
+            <svg viewBox="0 0 120 100" role="img"><path d="M22 62l9-25c2-6 7-10 14-10h34c7 0 12 4 15 10l9 25 5 7v13H12V69z" fill="#ff6b4a" stroke="#ffd2a8" stroke-width="3"/><path d="M39 39h42l8 18H31z" fill="#8be9ff" stroke="#17324a" stroke-width="3"/><path d="M17 65h86M28 73h64" stroke="#ffca66" stroke-width="4" stroke-linecap="round"/><circle cx="31" cy="79" r="9" fill="#111a2c" stroke="#c8d4e8" stroke-width="4"/><circle cx="89" cy="79" r="9" fill="#111a2c" stroke="#c8d4e8" stroke-width="4"/><path d="M54 27l7-13 7 13" fill="none" stroke="#c5ff4a" stroke-width="4" stroke-linecap="round"/></svg>
+          </span><span class="tag">RACING</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Speed Racer</h3><p>Dodge traffic and survive the road.</p></div><button class="card-play" data-game="racer" aria-label="Play Speed Racer">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card" data-category="puzzle" data-title="Color Match">
+          <div class="game-thumb thumb-puzzle"><span class="game-visual puzzle-visual" aria-hidden="true">
+            <svg viewBox="0 0 120 100" role="img"><path d="M22 18h25c-4 12 4 20 13 17 8-3 9-11 5-17h33v27c-12-4-20 4-17 13 3 8 11 9 17 5v29H70c4-12-4-20-13-17-8 3-9 11-5 17H22V65c12 4 20-4 17-13-3-8-11-9-17-5z" fill="#a98bff" stroke="#e1d6ff" stroke-width="3" stroke-linejoin="round"/><path d="M34 30h17M34 40h11M75 72h12" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="80" cy="34" r="5" fill="#c5ff4a"/></svg>
+          </span><span class="tag">PUZZLE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Color Match</h3><p>Test your focus in a quick color challenge.</p></div><button class="card-play" data-game="color" aria-label="Play Color Match">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card" data-category="action" data-title="Space Defender">
+          <div class="game-thumb thumb-space"><span class="game-visual space-visual" aria-hidden="true">
+            <svg viewBox="0 0 120 100" role="img"><path d="M61 12c19 13 27 32 20 53L60 85 39 65C32 44 42 24 61 12z" fill="#f4f7ff" stroke="#9cb9ff" stroke-width="3"/><path d="M43 54L22 65l8-25 12-9M78 54l21 11-8-25-12-9" fill="#51e5d1" stroke="#b6fff5" stroke-width="3" stroke-linejoin="round"/><circle cx="60" cy="45" r="9" fill="#6bc8ff" stroke="#253c70" stroke-width="3"/><path d="M51 77l9 17 9-17" fill="#ffb65c"/><path d="M60 83v12" stroke="#ff6b4a" stroke-width="5" stroke-linecap="round"/></svg>
+          </span><span class="tag">ACTION</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Space Defender</h3><p>Take aim and protect your galaxy.</p></div><button class="card-play" data-game="space" aria-label="Play Space Defender">Play <span>→</span></button></div>
+        </article>
+
+        <article class="game-card extra-game-card" data-category="puzzle" data-title="Memory Flip">
+          <div class="game-thumb extra-thumb extra-memory"><span class="extra-game-icon" aria-hidden="true">🃏</span><span class="tag">PUZZLE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Memory Flip</h3><p>Find matching pairs of cards.</p></div><button class="card-play" data-game="memory" aria-label="Play Memory Flip">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="puzzle" data-title="Tic Tac Toe">
+          <div class="game-thumb extra-thumb extra-ttt"><span class="extra-game-icon" aria-hidden="true">⭕</span><span class="tag">PUZZLE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Tic Tac Toe</h3><p>Play the classic two-player game.</p></div><button class="card-play" data-game="ttt" aria-label="Play Tic Tac Toe">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="arcade" data-title="Whack a Star">
+          <div class="game-thumb extra-thumb extra-whack"><span class="extra-game-icon" aria-hidden="true">⭐</span><span class="tag">ARCADE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Whack a Star</h3><p>Tap the star before it moves.</p></div><button class="card-play" data-game="whack" aria-label="Play Whack a Star">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="arcade" data-title="Coin Catcher">
+          <div class="game-thumb extra-thumb extra-coin"><span class="extra-game-icon" aria-hidden="true">🪙</span><span class="tag">ARCADE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Coin Catcher</h3><p>Collect coins and avoid bombs.</p></div><button class="card-play" data-game="coin" aria-label="Play Coin Catcher">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="puzzle" data-title="Number Guess">
+          <div class="game-thumb extra-thumb extra-guess"><span class="extra-game-icon" aria-hidden="true">🔢</span><span class="tag">PUZZLE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Number Guess</h3><p>Find the hidden number from 1 to 50.</p></div><button class="card-play" data-game="guess" aria-label="Play Number Guess">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="puzzle" data-title="Quick Math">
+          <div class="game-thumb extra-thumb extra-math"><span class="extra-game-icon" aria-hidden="true">➗</span><span class="tag">PUZZLE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Quick Math</h3><p>Solve quick sums before time runs out.</p></div><button class="card-play" data-game="math" aria-label="Play Quick Math">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="arcade" data-title="Tap Challenge">
+          <div class="game-thumb extra-thumb extra-tap"><span class="extra-game-icon" aria-hidden="true">👆</span><span class="tag">ARCADE</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Tap Challenge</h3><p>Test your tapping speed.</p></div><button class="card-play" data-game="tap" aria-label="Play Tap Challenge">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="action" data-title="Rock Paper Scissors">
+          <div class="game-thumb extra-thumb extra-rps"><span class="extra-game-icon" aria-hidden="true">✊</span><span class="tag">ACTION</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Rock Paper Scissors</h3><p>Play against the computer.</p></div><button class="card-play" data-game="rps" aria-label="Play Rock Paper Scissors">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="action" data-title="Dodge the Meteors">
+          <div class="game-thumb extra-thumb extra-meteor"><span class="extra-game-icon" aria-hidden="true">☄️</span><span class="tag">ACTION</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Dodge the Meteors</h3><p>Dodge falling space rocks.</p></div><button class="card-play" data-game="meteor" aria-label="Play Dodge the Meteors">Play <span>→</span></button></div>
+        </article>
+        <article class="game-card extra-game-card" data-category="racing" data-title="Lane Switch">
+          <div class="game-thumb extra-thumb extra-lane"><span class="extra-game-icon" aria-hidden="true">🚙</span><span class="tag">RACING</span><span class="play-icon">▶</span></div>
+          <div class="game-info"><div><h3>Lane Switch</h3><p>Switch lanes and avoid traffic.</p></div><button class="card-play" data-game="lane" aria-label="Play Lane Switch">Play <span>→</span></button></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No games found. Try another search.</p>
+      <p class="games-note">These are starter mini-games built into this website. More games can be added later.</p>
+    </section>
+
+    <section class="why-section" id="about">
+      <div class="section-wrap why-inner">
+        <div><div class="eyebrow">WHY FREEGAMES4U?</div><h2>Good games.<br><span>Good vibes.</span></h2></div>
+        <div class="why-points">
+          <div><span class="point-icon">⚡</span><div><h3>Quick to play</h3><p>Open a game right in your browser. No installation required.</p></div></div>
+          <div><span class="point-icon">📱</span><div><h3>Made for mobile</h3><p>A responsive layout designed for phones, tablets and computers.</p></div></div>
+          <div><span class="point-icon">🎮</span><div><h3>Fun for everyone</h3><p>Choose from different styles and find a new challenge.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section-wrap">
+      <div><div class="eyebrow">READY WHEN YOU ARE</div><h2>LET THE FUN <span>BEGIN.</span></h2><p>Choose a game and see how high you can score.</p></div>
+      <a class="button button-primary" href="#games">Find a game <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#"><span class="brand-mark">4U</span><span>FREEGAMES<span class="brand-accent">4U</span></span></a>
+    <p>© <span id="year"></span> FreeGames4U. Play fair, have fun.</p>
+    <a href="#about">About this site</a>
+  </footer>
+
+  <div class="modal" id="gameModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-panel">
+      <div class="modal-top"><div><span class="eyebrow">NOW PLAYING</span><h2 id="modalTitle">Game</h2></div><button class="close-modal" id="closeModal" aria-label="Close game">×</button></div>
+      <div id="gameArea" class="game-area"></div>
+      <p class="modal-help" id="modalHelp">Have fun!</p>
+    </div>
+  </div>
+  <script>
+const gameGrid = document.getElementById('gameGrid');
+const searchInput = document.getElementById('gameSearch');
+const filters = document.querySelectorAll('.filter');
+const noResults = document.getElementById('noResults');
+const modal = document.getElementById('gameModal');
+const gameArea = document.getElementById('gameArea');
+const modalTitle = document.getElementById('modalTitle');
+const modalHelp = document.getElementById('modalHelp');
+let currentCategory = 'all';
+let snakeTimer = null;
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+function filterGames() {
+  const term = searchInput.value.trim().toLowerCase();
+  let visible = 0;
+  document.querySelectorAll('.game-card').forEach(card => {
+    const matchesCategory = currentCategory === 'all' || card.dataset.category === currentCategory;
+    const matchesSearch = card.dataset.title.toLowerCase().includes(term) || card.dataset.category.includes(term);
+    card.hidden = !(matchesCategory && matchesSearch);
+    if (!card.hidden) visible++;
+  });
+  noResults.hidden = visible !== 0;
+}
+filters.forEach(button => button.addEventListener('click', () => {
+  filters.forEach(item => item.classList.remove('active'));
+  button.classList.add('active');
+  currentCategory = button.dataset.category;
+  filterGames();
+}));
+searchInput.addEventListener('input', filterGames);
+
+document.getElementById('menuToggle').addEventListener('click', event => {
+  const nav = document.querySelector('.main-nav');
+  const open = nav.classList.toggle('open');
+  event.currentTarget.setAttribute('aria-expanded', String(open));
+});
+document.querySelectorAll('.main-nav a').forEach(link => link.addEventListener('click', () => {
+  document.querySelector('.main-nav').classList.remove('open');
+  document.getElementById('menuToggle').setAttribute('aria-expanded', 'false');
+}));
+
+function stopGame() {
+  if (snakeTimer) clearInterval(snakeTimer);
+  if (window.extraTimer) clearInterval(window.extraTimer);
+  if (window.extraClock) clearInterval(window.extraClock);
+  snakeTimer = null;
+  window.extraTimer = null;
+  window.extraClock = null;
+}
+function openGame(game) {
+  stopGame();
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  const games = {
+    snake: ['Neon Snake', 'Use the arrow keys or swipe to guide the snake. Eat the pink food and avoid walls and yourself.'],
+    racer: ['Speed Racer', 'Use ← and → keys or the on-screen buttons to dodge the traffic.'],
+    color: ['Color Match', 'Tap the button as many times as you can in 10 seconds.'],
+    space: ['Space Defender', 'Tap the alien as quickly as you can before the timer ends.']
+  };
+  modalTitle.textContent = games[game][0];
+  modalHelp.textContent = games[game][1];
+  if (game === 'snake') startSnake();
+  if (game === 'racer') startRacer();
+  if (game === 'color') startColor();
+  if (game === 'space') startSpace();
+}
+document.querySelectorAll('.card-play[data-game="snake"], .card-play[data-game="racer"], .card-play[data-game="color"], .card-play[data-game="space"]').forEach(button => button.addEventListener('click', () => openGame(button.dataset.game)));
+function closeGame() {
+  stopGame();
+  modal.hidden = true;
+  document.body.style.overflow = '';
+  gameArea.innerHTML = '';
+}
+document.getElementById('closeModal').addEventListener('click', closeGame);
+modal.addEventListener('click', event => { if (event.target === modal) closeGame(); });
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !modal.hidden) closeGame();
+});
+
+function startSnake() {
+  gameArea.innerHTML = `<div class="mini-game"><h3>NEON SNAKE</h3><p>Score: <b id="snakeScore">0</b> · Use arrow keys</p><div class="snake-board" id="snakeBoard"></div><button class="game-action" id="snakeStart">Start / Restart</button></div>`;
+  const board = document.getElementById('snakeBoard');
+  const size = 12;
+  let snake, food, direction, nextDirection, score, running;
+  function reset() {
+    snake = [{x:5,y:6},{x:4,y:6},{x:3,y:6}]; food = {x:8,y:6};
+    direction = {x:1,y:0}; nextDirection = direction; score = 0; running = true;
+    document.getElementById('snakeScore').textContent = score; draw();
+    stopGame(); snakeTimer = setInterval(tick, 145);
+  }
+  function draw() {
+    board.innerHTML = '';
+    for (let y=0;y<size;y++) for(let x=0;x<size;x++) {
+      const cell=document.createElement('div'); cell.className='snake-cell';
+      if(snake.some(part=>part.x===x&&part.y===y)) cell.classList.add('snake');
+      if(food.x===x&&food.y===y) cell.classList.add('food');
+      board.appendChild(cell);
+    }
+  }
+  function tick() {
+    if(!running) return;
+    direction=nextDirection;
+    const head={x:snake[0].x+direction.x,y:snake[0].y+direction.y};
+    if(head.x<0||head.y<0||head.x>=size||head.y>=size||snake.some(part=>part.x===head.x&&part.y===head.y)) {
+      running=false; stopGame(); modalHelp.textContent=`Game over! Your score: ${score}. Press Start / Restart to play again.`; return;
+    }
+    snake.unshift(head);
+    if(head.x===food.x&&head.y===food.y) {
+      score+=10; document.getElementById('snakeScore').textContent=score;
+      do { food={x:Math.floor(Math.random()*size),y:Math.floor(Math.random()*size)}; } while(snake.some(part=>part.x===food.x&&part.y===food.y));
+    } else snake.pop();
+    draw();
+  }
+  document.getElementById('snakeStart').addEventListener('click',reset);
+  const keyHandler=e=>{
+    const map={ArrowUp:{x:0,y:-1},ArrowDown:{x:0,y:1},ArrowLeft:{x:-1,y:0},ArrowRight:{x:1,y:0}};
+    if(map[e.key]) { e.preventDefault(); const d=map[e.key]; if(d.x!==-direction.x||d.y!==-direction.y) nextDirection=d; }
+  };
+  document.addEventListener('keydown',keyHandler);
+  modal.dataset.cleanup='snake';
+  modal._cleanup=()=>document.removeEventListener('keydown',keyHandler);
+  reset();
+}
+
+function startRacer() {
+  gameArea.innerHTML = `<div class="mini-game"><h3>SPEED RACER</h3><p>Score: <b id="raceScore">0</b></p><div class="race-track" id="raceTrack"><span class="race-car" id="raceCar">🏎️</span></div><div style="display:flex;justify-content:center;gap:12px;margin-top:12px"><button class="game-action" id="leftBtn">← Left</button><button class="game-action" id="rightBtn">Right →</button></div><button class="game-action" id="raceStart" style="margin-top:10px">Restart</button></div>`;
+  const track=document.getElementById('raceTrack'), car=document.getElementById('raceCar');
+  let lane=1, score=0, obstacleY=-30, obstacleLane=1, running=true;
+  const move=d=>{lane=Math.max(0,Math.min(2,lane+d));car.style.left=['20%','calc(50% - 15px)','72%'][lane];};
+  document.getElementById('leftBtn').onclick=()=>move(-1);
+  document.getElementById('rightBtn').onclick=()=>move(1);
+  const key=e=>{if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1);};
+  document.addEventListener('keydown',key);
+  modal._cleanup=()=>document.removeEventListener('keydown',key);
+  let obstacle=document.createElement('span');obstacle.className='race-obstacle';obstacle.textContent='🚧';track.appendChild(obstacle);
+  function tick(){
+    if(!running)return;
+    obstacleY+=5;
+    obstacle.style.top=obstacleY+'px';
+    obstacle.style.left=['20%','calc(50% - 12px)','72%'][obstacleLane];
+    if(obstacleY>175){
+      if(lane===obstacleLane){running=false;stopGame();modalHelp.textContent=`Crash! Final score: ${score}. Press Restart to try again.`;return;}
+      score+=1;document.getElementById('raceScore').textContent=score;
+      obstacleY=-30;obstacleLane=Math.floor(Math.random()*3);
+    }
+  }
+  function restart(){stopGame();lane=1;score=0;obstacleY=-30;obstacleLane=1;running=true;car.style.left='calc(50% - 15px)';document.getElementById('raceScore').textContent='0';snakeTimer=setInterval(tick,55);}
+  document.getElementById('raceStart').onclick=restart;restart();
+}
+
+function startColor() {
+  gameArea.innerHTML = `<div class="mini-game"><h3>COLOR MATCH</h3><p>Click as fast as you can for 10 seconds!</p><div class="tap-score">Time: <span id="colorTime">10</span>s · Score: <span id="colorScore">0</span></div><button class="color-target" id="colorTarget">TAP ME!</button><p id="colorMessage">Press Start to begin.</p><button class="game-action" id="colorStart">Start game</button></div>`;
+  let score=0,time=10,active=false;
+  const target=document.getElementById('colorTarget'), colors=['#c5ff4a','#51e5d1','#ff78a7','#a98bff','#ffb65c'];
+  target.disabled=true;
+  target.onclick=()=>{if(!active)return;score++;document.getElementById('colorScore').textContent=score;target.style.color=colors[Math.floor(Math.random()*colors.length)];};
+  document.getElementById('colorStart').onclick=()=>{
+    stopGame();score=0;time=10;active=true;target.disabled=false;
+    document.getElementById('colorScore').textContent='0';document.getElementById('colorTime').textContent='10';document.getElementById('colorMessage').textContent='Go go go!';
+    snakeTimer=setInterval(()=>{time--;document.getElementById('colorTime').textContent=time;if(time<=0){stopGame();active=false;target.disabled=true;document.getElementById('colorMessage').textContent=`Time up! You scored ${score} taps.`;}},1000);
+  };
+}
+
+function startSpace() {
+  gameArea.innerHTML = `<div class="mini-game"><h3>SPACE DEFENDER</h3><p>Tap the alien before it moves. You have 15 seconds!</p><div class="tap-score">Time: <span id="spaceTime">15</span>s · Score: <span id="spaceScore">0</span></div><button class="space-target" id="spaceTarget" aria-label="Hit alien">👾</button><p id="spaceMessage">Press Start to defend the galaxy.</p><button class="game-action" id="spaceStart">Start game</button></div>`;
+  let score=0,time=15,active=false;
+  const target=document.getElementById('spaceTarget');
+  target.disabled=true;
+  target.onclick=()=>{if(!active)return;score++;document.getElementById('spaceScore').textContent=score;target.style.transform=`translate(${Math.random()*80-40}px,${Math.random()*25-12}px) rotate(${Math.random()*30-15}deg)`;};
+  document.getElementById('spaceStart').onclick=()=>{
+    stopGame();score=0;time=15;active=true;target.disabled=false;target.style.transform='none';
+    document.getElementById('spaceScore').textContent='0';document.getElementById('spaceTime').textContent='15';document.getElementById('spaceMessage').textContent='Defend!';
+    snakeTimer=setInterval(()=>{time--;document.getElementById('spaceTime').textContent=time;if(time<=0){stopGame();active=false;target.disabled=true;document.getElementById('spaceMessage').textContent=`Mission complete! You hit ${score} aliens.`;}},1000);
+  };
+}
+
+// Remove game-specific keyboard listeners when the modal closes.
+const originalClose = closeGame;
+closeGame = function() {
+  if (modal._cleanup) { modal._cleanup(); modal._cleanup = null; }
+  originalClose();
+};
+
+
+// Ten additional playable mini-games.
+const extraNames={memory:'Memory Flip',ttt:'Tic Tac Toe',whack:'Whack a Star',coin:'Coin Catcher',guess:'Number Guess',math:'Quick Math',tap:'Tap Challenge',rps:'Rock Paper Scissors',meteor:'Dodge the Meteors',lane:'Lane Switch'};
+function launchExtraGame(id){
+  if(!extraNames[id])return;
+  if(typeof stopGame==='function')stopGame();
+  modal.hidden=false;document.body.style.overflow='hidden';modalTitle.textContent=extraNames[id];
+  const put=s=>gameArea.innerHTML=`<div class="mini-game">${s}</div>`;
+  if(id==='memory'){
+    let vals=['🍓','🚀','🐼','🍕','⭐','🎲'],deck,open,matched,moves;
+    put(`<h3>MEMORY FLIP</h3><p>Moves: <b id="xMoves">0</b> · Pairs: <b id="xPairs">0/6</b></p><div class="memory-grid" id="xGrid"></div><button class="game-action" id="xReset">Restart</button>`);
+    const grid=document.getElementById('xGrid');
+    function draw(){grid.innerHTML='';deck.forEach((v,i)=>{let b=document.createElement('button');b.className='memory-card'+(open.includes(i)||matched.includes(i)?' revealed':'');b.textContent=open.includes(i)||matched.includes(i)?v:'?';b.onclick=()=>flip(i);grid.appendChild(b);});}
+    function reset(){deck=[...vals,...vals].sort(()=>Math.random()-.5);open=[];matched=[];moves=0;document.getElementById('xMoves').textContent=0;document.getElementById('xPairs').textContent='0/6';draw();}
+    function flip(i){if(open.length===2||open.includes(i)||matched.includes(i))return;open.push(i);draw();if(open.length===2){moves++;document.getElementById('xMoves').textContent=moves;if(deck[open[0]]===deck[open[1]]){matched.push(...open);open=[];document.getElementById('xPairs').textContent=(matched.length/2)+'/6';if(matched.length===12)modalHelp.textContent=`All pairs matched in ${moves} moves!`;draw();}else setTimeout(()=>{open=[];draw();},650);}}
+    document.getElementById('xReset').onclick=reset;reset();
+  }else if(id==='ttt'){
+    let a=Array(9).fill(''),turn='X',done=false,wins=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+    put(`<h3>TIC TAC TOE</h3><p id="xStatus">X starts</p><div class="ttt-grid" id="xGrid"></div><button class="game-action" id="xReset">New game</button>`);
+    const g=document.getElementById('xGrid');
+    function draw(){g.innerHTML='';a.forEach((v,i)=>{let b=document.createElement('button');b.className='ttt-cell';b.textContent=v;b.onclick=()=>play(i);g.appendChild(b);});}
+    function play(i){if(done||a[i])return;a[i]=turn;if(wins.some(w=>w.every(n=>a[n]===turn))){done=true;document.getElementById('xStatus').textContent=turn+' wins!';}else if(a.every(Boolean)){done=true;document.getElementById('xStatus').textContent='Draw!';}else{turn=turn==='X'?'O':'X';document.getElementById('xStatus').textContent=turn+"'s turn";}draw();}
+    function reset(){a=Array(9).fill('');turn='X';done=false;document.getElementById('xStatus').textContent='X starts';draw();}document.getElementById('xReset').onclick=reset;draw();
+  }else if(id==='whack'){
+    put(`<h3>WHACK A STAR</h3><p>Time: <b id="xTime">15</b>s · Score: <b id="xScore">0</b></p><div class="whack-grid" id="xGrid"></div><button class="game-action" id="xStart">Start / Restart</button>`);
+    let score=0,t=15,active=false,star=0;const g=document.getElementById('xGrid');
+    function draw(){g.innerHTML='';for(let i=0;i<9;i++){let b=document.createElement('button');b.className='whack-hole';b.textContent=i===star?'⭐':'·';b.onclick=()=>{if(active&&i===star){score++;document.getElementById('xScore').textContent=score;star=Math.floor(Math.random()*9);draw();}};g.appendChild(b);}}
+    document.getElementById('xStart').onclick=()=>{clearInterval(window.extraTimer);score=0;t=15;active=true;document.getElementById('xScore').textContent=0;document.getElementById('xTime').textContent=15;draw();window.extraTimer=setInterval(()=>{t--;star=Math.floor(Math.random()*9);document.getElementById('xTime').textContent=t;draw();if(t<=0){clearInterval(window.extraTimer);active=false;modalHelp.textContent=`Time up! Score: ${score}.`; }},1000);};draw();
+  }else if(id==='coin'){
+    put(`<h3>COIN CATCHER</h3><p>Score: <b id="xScore">0</b> · Time: <b id="xTime">20</b>s</p><div id="xField" style="height:180px;position:relative;background:#17243a;border-radius:10px;overflow:hidden"><button id="xItem" style="position:absolute;top:0;left:45%;font-size:30px;background:none;border:0">🪙</button></div><button class="game-action" id="xStart">Start / Restart</button>`);
+    let score=0,t=20,y=0,active=false;const item=document.getElementById('xItem'),field=document.getElementById('xField');
+    function place(){y=0;item.style.top='0px';item.style.left=Math.floor(Math.random()*(field.clientWidth-45))+'px';item.textContent=Math.random()<.2?'💣':'🪙';}
+    item.onclick=()=>{if(!active)return;if(item.textContent==='💣'){active=false;clearInterval(window.extraTimer);clearInterval(window.extraClock);modalHelp.textContent=`Bomb! Score: ${score}.`;return;}score++;document.getElementById('xScore').textContent=score;place();};
+    document.getElementById('xStart').onclick=()=>{clearInterval(window.extraTimer);clearInterval(window.extraClock);score=0;t=20;active=true;document.getElementById('xScore').textContent=0;document.getElementById('xTime').textContent=20;place();window.extraTimer=setInterval(()=>{y+=7;item.style.top=y+'px';if(y>145)place();},100);window.extraClock=setInterval(()=>{t--;document.getElementById('xTime').textContent=t;if(t<=0){active=false;clearInterval(window.extraTimer);clearInterval(window.extraClock);modalHelp.textContent=`Collected ${score} coins!`; }},1000);};
+  }else if(id==='guess'){
+    let secret=Math.floor(Math.random()*50)+1,tries=0;
+    put(`<h3>NUMBER GUESS</h3><p>Guess the hidden number from 1 to 50.</p><input class="game-input" id="xInput" type="number" min="1" max="50" placeholder="Your guess"><button class="game-action" id="xGuess">Guess</button><p id="xHint">Enter a number.</p><button class="game-choice" id="xReset">New number</button>`);
+    document.getElementById('xGuess').onclick=()=>{let n=Number(document.getElementById('xInput').value),h=document.getElementById('xHint');if(!Number.isInteger(n)||n<1||n>50){h.textContent='Enter a whole number from 1 to 50.';return;}tries++;h.textContent=n===secret?`Correct! You got it in ${tries} guesses!`:n<secret?'Too low — go higher.':'Too high — go lower.';};
+    document.getElementById('xReset').onclick=()=>{secret=Math.floor(Math.random()*50)+1;tries=0;document.getElementById('xInput').value='';document.getElementById('xHint').textContent='New number ready!';};
+  }else if(id==='math'){
+    let score=0,t=30,a,b,ans,clock;
+    put(`<h3>QUICK MATH</h3><p>Time: <b id="xTime">30</b>s · Score: <b id="xScore">0</b></p><h2 id="xQ" style="font-size:34px">?</h2><input class="game-input" id="xInput" type="number" placeholder="Answer"><button class="game-action" id="xSubmit">Submit</button><p id="xHint">Solve as many sums as you can!</p><button class="game-choice" id="xReset">Restart</button>`);
+    const inp=document.getElementById('xInput');function next(){a=1+Math.floor(Math.random()*20);b=1+Math.floor(Math.random()*20);ans=a+b;document.getElementById('xQ').textContent=`${a} + ${b} = ?`;inp.value='';}
+    function start(){clearInterval(clock);score=0;t=30;document.getElementById('xScore').textContent=0;document.getElementById('xTime').textContent=30;document.getElementById('xSubmit').disabled=false;next();clock=setInterval(()=>{t--;document.getElementById('xTime').textContent=t;if(t<=0){clearInterval(clock);document.getElementById('xSubmit').disabled=true;document.getElementById('xHint').textContent=`Time up! Score: ${score}.`; }},1000);}
+    document.getElementById('xSubmit').onclick=()=>{if(inp.value!==''&&Number(inp.value)===ans){score++;document.getElementById('xScore').textContent=score;document.getElementById('xHint').textContent='Correct!';next();}else document.getElementById('xHint').textContent='Try again!';};inp.addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('xSubmit').click();});document.getElementById('xReset').onclick=start;start();
+  }else if(id==='tap'){
+    let score=0,t=10,active=false;
+    put(`<h3>TAP CHALLENGE</h3><p>Time: <b id="xTime">10</b>s · Taps: <b id="xScore">0</b></p><button class="color-target" id="xTap" disabled>TAP FAST!</button><p id="xHint">Press start to begin.</p><button class="game-action" id="xStart">Start / Restart</button>`);
+    document.getElementById('xTap').onclick=()=>{if(active){score++;document.getElementById('xScore').textContent=score;}};
+    document.getElementById('xStart').onclick=()=>{clearInterval(window.extraClock);score=0;t=10;active=true;document.getElementById('xTap').disabled=false;document.getElementById('xScore').textContent=0;window.extraClock=setInterval(()=>{t--;document.getElementById('xTime').textContent=t;if(t<=0){clearInterval(window.extraClock);active=false;document.getElementById('xTap').disabled=true;document.getElementById('xHint').textContent=`Finished! ${score} taps.`;}},1000);};
+  }else if(id==='rps'){
+    let you=0,cpu=0;put(`<h3>ROCK PAPER SCISSORS</h3><p>Choose your move.</p><div class="game-controls"><button class="game-choice" data-xrps="rock">✊ Rock</button><button class="game-choice" data-xrps="paper">✋ Paper</button><button class="game-choice" data-xrps="scissors">✌️ Scissors</button></div><h3 id="xResult">Ready?</h3><p id="xScore">You 0 — 0 CPU</p>`);
+    const opts=['rock','paper','scissors'],icons={rock:'✊',paper:'✋',scissors:'✌️'};
+    document.querySelectorAll('[data-xrps]').forEach(b=>b.onclick=()=>{let p=b.dataset.xrps,c=opts[Math.floor(Math.random()*3)],r=p===c?'Draw!':((p==='rock'&&c==='scissors')||(p==='paper'&&c==='rock')||(p==='scissors'&&c==='paper'))?'You win!':'CPU wins!';if(r==='You win!')you++;if(r==='CPU wins!')cpu++;document.getElementById('xResult').textContent=`${icons[p]} vs ${icons[c]} — ${r}`;document.getElementById('xScore').textContent=`You ${you} — ${cpu} CPU`;});
+  }else{
+    let score=0,x=50,y=0,active=true;const meteor=id==='meteor';
+    put(`<h3>${meteor?'DODGE THE METEORS':'LANE SWITCH'}</h3><p>Score: <b id="xScore">0</b></p><div id="xField" style="height:190px;position:relative;background:#17243a;border-radius:10px;overflow:hidden"><span id="xPlayer" style="position:absolute;bottom:8px;left:calc(50% - 15px);font-size:28px">${meteor?'🛸':'🚙'}</span><span id="xHazard" style="position:absolute;top:0;left:40%;font-size:25px">${meteor?'☄️':'🚗'}</span></div><div class="game-controls"><button id="xLeft">← Left</button><button id="xRight">Right →</button><button id="xReset">Restart</button></div>`);
+    const player=document.getElementById('xPlayer'),hazard=document.getElementById('xHazard');function move(d){x=Math.max(5,Math.min(85,x+d));player.style.left=x+'%';}
+    document.getElementById('xLeft').onclick=()=>move(-10);document.getElementById('xRight').onclick=()=>move(10);
+    const key=e=>{if(e.key==='ArrowLeft')move(-5);if(e.key==='ArrowRight')move(5);};document.addEventListener('keydown',key);modal._cleanup=()=>document.removeEventListener('keydown',key);
+    function tick(){if(!active)return;y+=5;hazard.style.top=y+'px';if(y>145){if(Math.abs(player.offsetLeft-hazard.offsetLeft)<34){active=false;clearInterval(window.extraTimer);modalHelp.textContent=`Collision! Score: ${score}. Restart to try again.`;return;}score++;document.getElementById('xScore').textContent=score;y=0;hazard.style.left=Math.floor(Math.random()*80)+'%';}}
+    function restart(){clearInterval(window.extraTimer);active=true;x=50;y=0;score=0;player.style.left='calc(50% - 15px)';hazard.style.top='0';hazard.style.left='40%';document.getElementById('xScore').textContent=0;window.extraTimer=setInterval(tick,75);}
+    document.getElementById('xReset').onclick=restart;restart();
+  }
+}
+document.addEventListener('click',e=>{const b=e.target.closest('.card-play[data-game]');if(b&&extraNames[b.dataset.game])launchExtraGame(b.dataset.game);});
+
+  </script>
+</body>
+</html>
