@@ -40,6 +40,7 @@
 .game-choice,.game-controls button{border:1px solid #42516c;border-radius:8px;background:#24334e;color:white;padding:11px 14px;margin:5px;cursor:pointer}
 .game-controls{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin-top:12px}
 .color-target:disabled{opacity:.5;cursor:not-allowed}
+.snake-controls{display:grid;grid-template-columns:repeat(3,58px);grid-template-rows:repeat(2,48px);gap:7px;justify-content:center;margin:14px auto 4px;touch-action:none;user-select:none}.snake-controls button{border:1px solid #52627c;border-radius:10px;background:#263852;color:#f5f7ff;font-size:23px;font-weight:800;box-shadow:0 3px 0 #111b2c;touch-action:none; -webkit-tap-highlight-color:transparent}.snake-controls button:active{background:var(--lime);color:#101727;transform:translateY(2px);box-shadow:0 1px 0 #111b2c}.snake-controls .up{grid-column:2;grid-row:1}.snake-controls .left{grid-column:1;grid-row:2}.snake-controls .down{grid-column:2;grid-row:2}.snake-controls .right{grid-column:3;grid-row:2}.snake-hint{font-size:11px;color:var(--muted);margin-top:8px}
 @media(max-width:420px){.ttt-grid{grid-template-columns:repeat(3,64px)}.ttt-cell{height:64px}.whack-grid{grid-template-columns:repeat(3,60px)}.whack-hole{height:56px}}
 
   </style>
@@ -288,7 +289,7 @@ document.addEventListener('keydown', event => {
 });
 
 function startSnake() {
-  gameArea.innerHTML = `<div class="mini-game"><h3>NEON SNAKE</h3><p>Score: <b id="snakeScore">0</b> · Use arrow keys</p><div class="snake-board" id="snakeBoard"></div><button class="game-action" id="snakeStart">Start / Restart</button></div>`;
+  gameArea.innerHTML = `<div class="mini-game"><h3>NEON SNAKE</h3><p>Score: <b id="snakeScore">0</b></p><div class="snake-board" id="snakeBoard"></div><div class="snake-controls" aria-label="Snake direction controls"><button class="up" data-dir="up" aria-label="Up">▲</button><button class="left" data-dir="left" aria-label="Left">◀</button><button class="down" data-dir="down" aria-label="Down">▼</button><button class="right" data-dir="right" aria-label="Right">▶</button></div><p class="snake-hint">Use the buttons or keyboard arrow keys</p><button class="game-action" id="snakeStart">Start / Restart</button></div>`;
   const board = document.getElementById('snakeBoard');
   const size = 12;
   let snake, food, direction, nextDirection, score, running;
@@ -327,6 +328,12 @@ function startSnake() {
     if(map[e.key]) { e.preventDefault(); const d=map[e.key]; if(d.x!==-direction.x||d.y!==-direction.y) nextDirection=d; }
   };
   document.addEventListener('keydown',keyHandler);
+  const directions={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};
+  gameArea.querySelectorAll('.snake-controls button').forEach(button=>{
+    const steer=e=>{e.preventDefault();const d=directions[button.dataset.dir];if(d.x!==-direction.x||d.y!==-direction.y)nextDirection=d;};
+    button.addEventListener('pointerdown',steer);
+    button.addEventListener('click',steer);
+  });
   modal.dataset.cleanup='snake';
   modal._cleanup=()=>document.removeEventListener('keydown',keyHandler);
   reset();
